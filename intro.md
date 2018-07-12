@@ -129,3 +129,24 @@ Respoonse
     }
   ]
 }
+
+POST /customer/_doc?pretty
+{
+  "name": "Jane Doe"
+}
+
+Response:
+{
+  "_index": "customer",
+  "_type": "_doc",
+  "_id": "1uuXjWQBDHQ_mMs7zocU",
+  "_version": 1,
+  "result": "created",
+  "_shards": {
+    "total": 2,
+    "successful": 1,
+    "failed": 0
+  },
+  "_seq_no": 0,
+  "_primary_term": 1
+}
