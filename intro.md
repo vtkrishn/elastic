@@ -108,3 +108,24 @@ Response:
 }
 
 get bank/account/_search
+
+Analysis of the words
+
+get bank/_analyze
+{
+  "tokenizer" : "letter",
+  "text" : "vinod"
+}
+
+Respoonse
+{
+  "tokens": [
+    {
+      "token": "vinod",
+      "start_offset": 0,
+      "end_offset": 5,
+      "type": "word",
+      "position": 0
+    }
+  ]
+}
