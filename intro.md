@@ -130,6 +130,7 @@ Respoonse
   ]
 }
 
+to create without id
 POST /customer/_doc?pretty
 {
   "name": "Jane Doe"

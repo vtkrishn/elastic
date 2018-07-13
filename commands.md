@@ -59,3 +59,19 @@ POST /customer/_doc/_bulk?pretty
 {"update":{"_id":"1"}}
 {"doc": { "name": "John Doe becomes Jane Doe" } }
 {"delete":{"_id":"2"}}
+
+download from
+https://github.com/elastic/elasticsearch/blob/master/docs/src/test/resources/accounts.json?raw=true
+curl -H "Content-Type: application/json" -XPOST "localhost:9200/bank/_doc/_bulk?pretty&refresh" --data-binary "@accounts.json"
+
+get _cat/indices?v
+
+GET /bank/_search?q=*&sort=account_number:asc&pretty
+
+GET /bank/_search
+{
+  "query": { "match_all": {} },
+  "sort": [
+    { "account_number": "asc" }
+  ]
+}
