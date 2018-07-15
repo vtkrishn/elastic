@@ -34,6 +34,9 @@ if u create 1 index with 1 node
 1 shard with id 3 - 1 primary Shard, 1 replica
 1 shard with id 4 - 1 primary Shard, 1 replica
 
+node1
+        5 shards, 5 primary,  5 replicas
+
 if u create 1 index with 2 node
 node 1
         3 shards, 3 primary,  2 replicas
