@@ -51,7 +51,7 @@ node 2
 node 3
         1 shards, 1 primary , 2 replicas
 
-DATA part
+DATA part 
 ---------------
 Index
     Collection of documents
